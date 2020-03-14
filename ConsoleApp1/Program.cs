@@ -40,6 +40,8 @@ namespace ConsoleApp1
                 Imie ="Jan",
                 Nazwisko="Kowalski",
                 Email="kowalski@wp.pl"
+                
+                
 
 
             };
