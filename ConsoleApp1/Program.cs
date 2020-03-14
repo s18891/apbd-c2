@@ -19,7 +19,6 @@ namespace ConsoleApp1
 
             var fi = new FileInfo(path);
             var stream = new StreamReader(fi.OpenRead());
-
             
             
             string line = null;
