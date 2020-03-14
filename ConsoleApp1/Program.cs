@@ -21,27 +21,11 @@ namespace ConsoleApp1
             var stream = new StreamReader(fi.OpenRead());
 
             string line = null;
-            string[] splitLine = null;
-            var list = new List<Student>();
-
-
 
             while ((line = stream.ReadLine()) != null)
             {
                 Console.WriteLine(line);
-                
-                splitLine = line.Split(',');
-
-
-                if (splitLine.Length != 9)
-                {
-                    Console.WriteLine("ERROR");
-                }
-            
-
-
-
-            
+            }
         
 
             //stream.Dispose();
@@ -50,23 +34,17 @@ namespace ConsoleApp1
             //XML
 
 
+            var list = new List<Student>();
             var st = new Student
             {
-                Imie =splitLine[0],
-                Nazwisko=splitLine[1],
-               kierunekStudiow = splitLine[2],
-               typStudiow = splitLine[3],
-               numerstudenta = splitLine[4],
-               dataUrodzenia = splitLine[5],
-               email = splitLine[6],
-               imieMatki = splitLine[7],
-               imieOjca = splitLine[8],
-               
+                Imie ="Jan",
+                Nazwisko="Kowalski",
+                Email="kowalski@wp.pl"
 
 
             };
             list.Add(st);
-            }
+
             FileStream writer = new FileStream(@"data.xml", FileMode.Create);
             XmlSerializer serializer = new XmlSerializer(typeof(List<Student>),
                 new XmlRootAttribute("uczelnia"));

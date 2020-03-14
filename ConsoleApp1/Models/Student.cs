@@ -7,36 +7,14 @@ namespace ConsoleApp1.Models
 {
     public class Student
     {
-        [XmlAttribute(AttributeName = "indexNumber")]
-        
-        public string numerstudenta { get; set; }
-
-        
-        [XmlElement(ElementName = "fname")]
+        [XmlElement(ElementName = "InneNazwa2")]
         public string Imie { get; set; }
 
-        [XmlElement(ElementName = "lname")]
+        [XmlAttribute(AttributeName = "InnaNazwa")]
         public string Nazwisko { get; set; }
-        
-        [XmlElement(ElementName = "birthdate")]
-        public string dataUrodzenia { get; set; }
-        
-        [XmlElement(ElementName = "email")]
-        public string email { get; set; }
-        
-        [XmlElement(ElementName = "mothersname")]
-        public string imieMatki { get; set; }
-        
-        [XmlElement(ElementName = "fathersname")]
-        public string imieOjca { get; set; }
-     
-        //[XmlElement(ElementName = "studies")] /// nie wiem jak zrobić nowy znacznik
-        
-        [XmlElement(ElementName = "name")]
-        public string kierunekStudiow { get; set; }
-        
-        [XmlElement(ElementName = "mode")]
-        public string typStudiow { get; set; }
+
+        [XmlAttribute(AttributeName = "InnaNazwa3")]
+        public string Email { get; set; }
 
     }
 }
