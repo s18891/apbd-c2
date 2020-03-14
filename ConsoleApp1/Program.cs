@@ -42,6 +42,9 @@ namespace ConsoleApp1
                 Email="kowalski@wp.pl"
                 
                 
+                
+                
+                
 
 
             };
